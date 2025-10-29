@@ -24,7 +24,7 @@ Key components:
 ### 🧩 EKF Algorithm Steps
 
 <p align="center">
-  <img src="docs/EKF.png" alt="EKF Algorithm" width="500"/>
+  <img src="https://github.com/prathameshdv/EKF-Based-SLAM/blob/main/EKF.png?raw=true" alt="EKF Algorithm Diagram" width="500"/>
 </p>
 
 The EKF algorithm consists of **prediction** and **update** stages as shown above.  
@@ -35,13 +35,28 @@ It estimates both the robot’s position and landmark locations while continuous
 The following equation represents the **velocity-based kinematic model** used for motion prediction:
 
 <p align="center">
-  <img src="docs/Velocity%20Model.png" alt="Velocity Motion Model" width="500"/>
+  <img src="https://github.com/prathameshdv/EKF-Based-SLAM/blob/main/Velocity Model.png?raw=true" alt="Velocity Motion Model" width="500"/>
 </p>
 
 This model accounts for both **linear** and **angular velocity**, ensuring accurate pose estimation even during curved motion trajectories.
 
 ---
 
+### Visualization
+
+The node displays:
+
+Blue circle: robot position.
+
+Red ellipse: robot pose covariance
+
+Red crosses: landmarks
+
+Gray dots: LIDAR scan points
+
+Heatmap: covariance matrix of the full SLAM state
+
+The plot updates live as the robot moves.
 
 
 
