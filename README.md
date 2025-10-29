@@ -54,6 +54,10 @@ The node displays:
 
 The plot updates **live** as the robot moves.
 
+---
 
+### 📜 References
+
+Probabilistic Robotics — Thrun, Burgard & Fox (MIT Press)
 
 ---
