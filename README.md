@@ -42,21 +42,17 @@ This model accounts for both **linear** and **angular velocity**, ensuring accur
 
 ---
 
-### Visualization
+## 📊 Visualization
 
 The node displays:
 
-Blue circle: robot position.
+-  **Blue circle:** Robot position  
+-  **Red ellipse:** Robot pose covariance  
+-  **Red crosses:** Landmarks  
+-  **Gray dots:** LIDAR scan points  
+-  **Heatmap:** Covariance matrix of the full SLAM state  
 
-Red ellipse: robot pose covariance
-
-Red crosses: landmarks
-
-Gray dots: LIDAR scan points
-
-Heatmap: covariance matrix of the full SLAM state
-
-The plot updates live as the robot moves.
+The plot updates **live** as the robot moves.
 
 
 
