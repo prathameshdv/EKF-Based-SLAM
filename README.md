@@ -60,14 +60,6 @@ The plot updates **live** as the robot moves.
 
 ---
 
-
-
-
-
-### Video Simulation
-
-Video - https://github.com/user-attachments/assets/9662e244-c5d7-4d44-9823-03e05311e2be
-
 ### 📜 References
 
 Probabilistic Robotics — Thrun, Burgard & Fox (MIT Press)
