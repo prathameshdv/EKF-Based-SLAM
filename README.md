@@ -46,6 +46,10 @@ This model accounts for both **linear** and **angular velocity**, ensuring accur
 
 The node displays:
 
+
+https://github.com/user-attachments/assets/414ce603-710a-46b7-b799-f75784db6f92
+
+
 -  **Blue circle:** Robot position  
 -  **Red ellipse:** Robot pose covariance  
 -  **Red crosses:** Landmarks  
