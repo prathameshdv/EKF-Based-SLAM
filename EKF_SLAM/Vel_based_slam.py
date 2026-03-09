@@ -120,7 +120,7 @@ class SlamEkf(Node):
         self.latest_odom_pose[1] = msg.pose.pose.position.y
 
     def scan_callback(self, msg : LaserScan):
-        # ... (This function remains unchanged)
+  
         # get angles of the scan
         nscan = round((msg.angle_max - msg.angle_min)/msg.angle_increment)+1
         angles = np.linspace(msg.angle_min, msg.angle_max, nscan, endpoint=True)
@@ -160,7 +160,7 @@ class SlamEkf(Node):
         self.landmark_measurements.timestamp = self.get_curr_time()
 
     def plot_callback(self):
-        # ... (This function remains unchanged, except for odom plot)
+       
         # plot robot pose
         x,y,yaw = self.robot_state[:,0]
         d = 0.3
@@ -248,7 +248,7 @@ class SlamEkf(Node):
         self.fig.canvas.draw()
 
     def cluster_pts(self, pts):
-        # ... (This function remains unchanged)
+     
         if len(pts)==0:
             return []
         clu = self.dbscan.fit(pts)
@@ -260,12 +260,11 @@ class SlamEkf(Node):
         return result
 
     def get_curr_time(self):
-        # ... (This function remains unchanged)
         sec, nanosec = self.get_clock().now().seconds_nanoseconds()
         return float(sec) + float(nanosec)/1.0e9
     
     def slam_timing(self):
-        # ... (This function remains unchanged)
+        
         timeout_dur = 0.21 # duration for checking scan data availability
         curr_ts = self.get_curr_time()
         if self.slam_last_ts is None:
@@ -424,8 +423,7 @@ class SlamEkf(Node):
             self.sigma[3:,:3] = tmp
             self.sigma[:3,3:] = tmp.T
             
-    # --- The following functions are part of the CORRECTION step ---
-    # --- They are independent of the motion model and remain unchanged ---
+
 
     def convert_to_fixed_frame(self, landmark_measurements):
         x,y,yaw = self.robot_state[:,0]
